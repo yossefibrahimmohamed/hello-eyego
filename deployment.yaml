@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-eyego
+  template:
+    metadata:
+      labels:
+        app: hello-eyego
+    spec:
+      containers:
+        - name: hello-eyego
+          image: [ACCOUNT_ID].dkr.ecr.us-east-1.amazonaws.com/hello-eyego
+          ports:
+            - containerPort: 3000
