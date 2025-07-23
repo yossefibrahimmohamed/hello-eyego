@@ -5,15 +5,6 @@ Hello Eyego is a Projcet App
 
 This is a simple Node.js web app that returns a friendly `Hello Eyego` message via an API.
 
-Note:
-Deployment to Amazon Web Services (AWS) has not been completed due to the requirement of a valid credit card for account activation.
-As this project is intended for learning and demonstration purposes, and to avoid any unintended charges, the application is currently hosted locally and available via Docker Hub.
-
-The setup, however, is fully compatible with AWS EKS, and all Kubernetes manifests are included in the project for future deployment.
-
-![Screenshot 2025-07-23 202254](https://github.com/user-attachments/assets/abf29b7c-adc3-4228-8e2d-151f6712ed14)
-
-
 It demonstrates:
 
 - Containerization with **Docker**
@@ -97,3 +88,12 @@ Secrets required:
     AWS_SECRET_ACCESS_KEY
 
 ```
+
+
+Note:
+Deployment to Amazon Web Services (AWS) has not been completed due to the requirement of a valid credit card for account activation.
+As this project is intended for learning and demonstration purposes, and to avoid any unintended charges, the application is currently hosted locally and available via Docker Hub.
+
+The setup, however, is fully compatible with AWS EKS, and all Kubernetes manifests are included in the project for future deployment.
+
+![Screenshot 2025-07-23 202254](https://github.com/user-attachments/assets/abf29b7c-adc3-4228-8e2d-151f6712ed14)
