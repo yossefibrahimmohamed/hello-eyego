@@ -43,36 +43,48 @@ git clone https://github.com/yossefibrahimmohamed/hello-eyego.git
 cd hello-eyego
 npm install
 node index.js
+```
 
 Then visit: http://localhost:3000
 🐳 Docker
 Build & Run:
 
+```
 docker build -t hello-eyego .
 docker run -p 3000:3000 hello-eyego
+```
 
 ☸️ Kubernetes (AWS EKS)
 Prerequisites:
-
+``
     AWS CLI & EKS configured
 
     kubectl installed
+```
 
 Deploy:
 
+```
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
+```
 
 🔁 GitHub Actions
 
+```
 On every push to main:
 
+```
     Automatically applies Kubernetes manifests
 
     Assumes image already pushed to Docker Hub
 
+```
 Secrets required:
 
+```
     AWS_ACCESS_KEY_ID
 
     AWS_SECRET_ACCESS_KEY
+
+```
